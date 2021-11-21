@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container text-center bg-dark text-light pb-3 pt-3">
+        <h1 class="text center">Counter</h1>
+        <h1 class="text center">{{session['visits']}}</h1>
+
+        <form action="/custom" method="POST" class="mb-3">
+            <input type="number" name="add_custom" value=0 class="mb-1 col-sm-2">
+            <br>
+            <button type="submit" class="btn btn-primary">Add custom</button>
+        </form>
+        
+        <form action="/add_2" class="mb-3">
+            <button type="submit" class="btn btn-primary">Add 2</button>
+        </form>
+        
+        <form action="/destroy_session" class="mb-5">
+            <button type="submit" class="btn btn-primary">Reset</button>
+        </form>
+</div>
+    
+    
+</body>
+</html>
